@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Mic, Zap, Droplet, Archive, Check, Sparkles } from "lucide-react";
 
 export default function Home() {
@@ -119,19 +120,19 @@ export default function Home() {
           </h3>
           <div className="space-y-4">
             <div className="flex items-center gap-3">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <Check className="w-5 h-5 text-white" strokeWidth={3} />
               </div>
               <p className="text-gray-300">Priority Beta Access</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <Check className="w-5 h-5 text-white" strokeWidth={3} />
               </div>
               <p className="text-gray-300">Direct Roadmap Input</p>
             </div>
             <div className="flex items-center gap-3">
-              <div className="flex-shrink-0">
+              <div className="shrink-0">
                 <Check className="w-5 h-5 text-white" strokeWidth={3} />
               </div>
               <p className="text-gray-300">Lifetime Early-Adopter Pricing</p>
@@ -144,9 +145,9 @@ export default function Home() {
       <footer className="py-8 text-center text-sm text-gray-500">
         <p>
           © 2025 Mind Archive. All rights reserved.{" "}
-          <a href="/privacy-policy" className="underline hover:text-gray-300 transition">
+          <Link href="/privacy-policy" className="underline hover:text-gray-300 transition">
             Privacy Policy
-          </a>
+          </Link>
         </p>
       </footer>
 
