@@ -166,7 +166,7 @@ export default function PrivacyPolicy() {
                 </p>
               </div>
 
-              <div>
+              {/* <div>
                 <h3 className="text-2xl font-semibold mb-3 text-white">9. Contact Us</h3>
                 <p className="text-gray-300 leading-relaxed">
                   If you have any questions about this Privacy Policy, please contact us at{" "}
@@ -178,7 +178,7 @@ export default function PrivacyPolicy() {
                   </a>
                   .
                 </p>
-              </div>
+              </div> */}
             </div>
           </section>
 
