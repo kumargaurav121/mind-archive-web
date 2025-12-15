@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Mic, Zap, Droplet, Archive, Check, Sparkles } from "lucide-react";
+import { Mic, Zap, Droplet, Archive, Check } from "lucide-react";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
 
@@ -323,11 +323,6 @@ export default function Home() {
           </Link>
         </p>
       </footer>
-
-      {/* Decorative Sparkle - Bottom Right */}
-      <div className="fixed bottom-8 right-8 opacity-50">
-        <Sparkles className="w-16 h-16 text-white/30" strokeWidth={1} />
-      </div>
     </div>
   );
 }
