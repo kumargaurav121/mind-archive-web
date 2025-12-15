@@ -26,10 +26,19 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="flex-1 flex flex-col items-center justify-center px-6 pb-20">
-        {/* Microphone Icon with Glow */}
+        {/* Microphone Icon with Animated Glow */}
         <div className="relative mb-12">
-          <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl scale-150"></div>
-          <div className="relative bg-white rounded-full p-8 shadow-2xl">
+          {/* Outer pulsing ring 1 */}
+          <div className="absolute inset-0 bg-white/10 rounded-full animate-pulse-ring-1 scale-150"></div>
+
+          {/* Outer pulsing ring 2 */}
+          <div className="absolute inset-0 bg-white/10 rounded-full animate-pulse-ring-2 scale-125"></div>
+
+          {/* Breathing glow */}
+          <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl scale-150 animate-breathe"></div>
+
+          {/* Main button */}
+          <div className="relative bg-white rounded-full p-8 shadow-2xl animate-float">
             <Mic className="w-12 h-12 text-black" strokeWidth={2} />
           </div>
         </div>
