@@ -135,7 +135,7 @@ export default function Home() {
       <footer className="py-8 text-center text-sm text-gray-500">
         <p>
           © 2025 Mind Archive. All rights reserved.{" "}
-          <a href="#" className="underline hover:text-gray-300 transition">
+          <a href="/privacy-policy" className="underline hover:text-gray-300 transition">
             Privacy Policy
           </a>
         </p>
